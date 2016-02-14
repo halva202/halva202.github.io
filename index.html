@@ -5,8 +5,12 @@
 	<title>Halva202</title>
 	<meta name="keywords" content="halva202" />
 	<meta name="description" content="site-card of Viktar Akulenka" />
+	
+	<!-- library/slider/ (если после основного css, то конфликт) -->
+	<link rel="stylesheet" href="public/library/slider/css/main.css" type="text/css" />
+	<!-- /   library/slider/ -->
+	
 	<link href="css/templatemo_style.css" rel="stylesheet" />
-
 	<link href="css/nivo-slider.css" media="screen" rel="stylesheet" />
 		
 	<script>
@@ -41,6 +45,14 @@
 	})
 
 	</script>
+	
+	<!-- library/slider/ -->
+	
+	<!-- конфликт <link rel="stylesheet" href="library/slider/css/main.css" type="text/css" /> -->
+	<script type="text/javascript" src="public/library/slider/js/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="public/library/slider/js/main.js"></script>
+	
+	<!-- /library/slider -->
 
 </head>
 
@@ -87,10 +99,10 @@
         <br style="clear: left" />
     </div> <!-- end of menu -->
     
-    <div id="templatemo_slider_wrapper">
+    <!-- <div id="templatemo_slider_wrapper">
         
         <div id="slider" class="nivoSlider">
-            <a href="http://www.templatemo.com"><img src="images/slider/01.jpg" alt="Slider 01" title="Donec sit amet gravida quam ut condimentum risus" /></a>
+            <a href="http://www.templatemo.com"><img src="images/slider/ttt.jpg" alt="Slider 01" title="Donec sit amet gravida quam ut condimentum risus" /></a>
             <a href="http://www.flashmo.com"><img src="images/slider/02.jpg" alt="Slider 02" title="Aenean tortor vel porttitor volutpat" /></a>
             <a href="http://www.templatemo.com/page/1"><img src="images/slider/03.jpg" alt="Slider 03" title="Mauris lobortis placerat sollicitudin" /></a>
             <a href="http://www.flashmo.com/page/1"><img src="images/slider/04.jpg" alt="Slider 04" title="Pellentesque dignissim dapibus fermentum" /></a>
@@ -100,15 +112,55 @@
         	<strong>This</strong> is an example of a HTML caption with <a href="#">a link</a>.
         </div>
     
-    </div>
+    </div> -->
     
-    <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+   <!--  <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
     $('#slider').nivoSlider();
     });
-    </script>
+    </script> -->
+	
+		<div class="example">
+			<h3><a href="#">My life</a></h3>
+			<ul id="my_slider">
+			  <li><img src="public/myFoto/ava.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/karaoke.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/kronshtadt.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/kayaking.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/dance.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/nature4.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/waterflow.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/velowinter.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/piter3.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/volga.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/veloslonim.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/parallelBars.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/rome.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/naliboki.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/bsu.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/cave2.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/naliboki2.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/borisov.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/shopStockholm.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/piter4.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/piter.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/moskow2.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/lakes.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/air.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/barsa.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/cave.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/box.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/cave3.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/neva.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/nature2.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/piter2.jpg" alt="" /></li>
+			  <li><img src="public/myFoto/mountain.jpg" alt="" /></li>
+			</ul>
+			<div id="counter"></div>
+		</div>
+		<!-- <hr style="clear:both;" /> -->
     
     <div id="templatemo_main">
         <div class="col_4">

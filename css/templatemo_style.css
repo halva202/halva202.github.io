@@ -9,8 +9,8 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.3em; 
-	background-color: #3e3e3e;
-	background-image: url(../images/templatemo_body.jpg);
+	background-color: #F0FFFF;
+	/* background-image: url(../images/templatemo_body.jpg); */
 	background-repeat: repeat;
 }
 

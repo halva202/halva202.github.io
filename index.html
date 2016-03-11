@@ -24,7 +24,8 @@
 
 	<link href="css/ddsmoothmenu.css" rel="stylesheet" />
 
-	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 	<script src="js/ddsmoothmenu.js">
 
 	/***********************************************
@@ -58,7 +59,13 @@
 </head>
 
 <body>
-
+<!-- <script> 
+    $(function(){
+      $("#templatemo_menu").load("menu.html"); 
+    });
+    </script> -->
+	
+	
 <div id="templatemo_wrapper">
 	<div id="templatemo_header">
         <div id="site_title">
@@ -78,29 +85,32 @@
         <div class="cleaner"></div>
     </div> <!-- end of header -->
     
-    <div id="templatemo_menu" class="ddsmoothmenu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Sites</a>
-                <ul>
-                    <li><a href="http://repetitor.github.io/" >репетитор</a></li>
-					<li><a href="http://cvr.by/" >создать, продвинуть сайт</a></li>
-                    <li><a href="https://calendar.yandex.ru/week?embed&private_token=bb07b200d6f883707f1f430e8dfad8b46dc5053d&tz_id=Europe/Minsk" >календарь</a></li>
-                    <li><a href="http://viktarian.github.io/" >прошлый сайт-визитка</a></li>
-                    <span></span>
-                </ul>
-            </li>
-          	<li><a href="contact.html" class="selected">Contact</a></li>
-			<li><a href="">ЯндексДиск (в разработке)</a>
-                <ul>
-                    <li><a href="https://yadi.sk/d/NXMIqBYLoyb7b" target="blank">notebook</a></li>
-					<li><a href="https://yadi.sk/d/ijt3okO9q3aqR" target="blank">tutor</a></li>
-                    <span></span>
-                </ul>
-            </li>
-        </ul>
-        <br style="clear: left" />
-    </div> <!-- end of menu -->
+	
+	<!-- menu -->
+    <div id="templatemo_menu">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="">Sites</a>
+			<ul>
+				<li><a href="http://repetitor.github.io/" >репетитор</a></li>
+				<li><a href="http://cvr.by/" >создать, продвинуть сайт</a></li>
+				<li><a href="https://calendar.yandex.ru/week?embed&private_token=bb07b200d6f883707f1f430e8dfad8b46dc5053d&tz_id=Europe/Minsk" >календарь</a></li>
+				<li><a href="http://viktarian.github.io/" >прошлый сайт-визитка</a></li>
+				<span></span>
+			</ul>
+		</li>
+		<li><a href="contact.html" class="selected">Contact</a></li>
+		<li><a href="">ЯндексДиск (в разработке)</a>
+			<ul>
+				<li><a href="https://yadi.sk/d/NXMIqBYLoyb7b" target="blank">notebook</a></li>
+				<li><a href="https://yadi.sk/d/ijt3okO9q3aqR" target="blank">tutor</a></li>
+				<span></span>
+			</ul>
+		</li>
+	</ul>
+	<br style="clear: left" />
+ <!-- end of menu -->
+	</div>
     
     <!-- <div id="templatemo_slider_wrapper">
         
@@ -237,8 +247,8 @@
     
     <div id="templatemo_footer">
 			<div class="footer_social_button">
-				<a href="http://vk.com/viktarian"><img src="public/images/vk32.png" title="rss" alt="rss" /></a>
-                <a href="https://www.facebook.com/viktarian" target="blank"><img src="images/facebook-32x32.png" title="facebook" alt="facebook" /></a>
+				<a href="http://vk.com/halva202"><img src="public/images/vk32.png" title="rss" alt="rss" /></a>
+                <a href="https://www.facebook.com/halva202" target="blank"><img src="images/facebook-32x32.png" title="facebook" alt="facebook" /></a>
                 <!-- <a href="#"><img src="images/flickr-32x32.png" title="flickr" alt="flickr" /></a> -->
                 <!-- <a href="#"><img src="images/twitter-32x32.png" title="twitter" alt="twitter" /></a> -->
                 <a href="https://www.youtube.com/channel/UCyYbgYd4iQD3qPlQf5SxZIg" target="blank"><img src="images/youtube-32x32.png" title="youtube" alt="youtube" /></a>

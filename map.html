@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>map - Halva202</title>
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+
+<style>
+	#map {
+		 height: 300px; padding: 100; margin: 20000;
+	}
+</style> 
+
+<div id="map"></div>
+
+
+</body>
+
+<script>
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+			center: [53.081713, 25.295363],
+            zoom: 12
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+		
+		myPlacemark = new ymaps.Placemark([53.081713, 25.295363], {
+            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+            balloonContentHeader: "Балун метки2",
+            balloonContentBody: "Содержимое <em>балуна2</em> метки",
+            balloonContentFooter: "Подвал2",
+                iconContent: 'user',
+            hintContent: "Хинт метки2"
+        },
+		
+		{
+			preset: "islands#redStretchyIcon"
+        });
+
+		myMap.geoObjects.add(myPlacemark);
+		
+		
+		
+}
+</script>
+
+</html>
